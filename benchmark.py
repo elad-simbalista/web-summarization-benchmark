@@ -317,7 +317,7 @@ def run_benchmark(
         return avg(vals)
 
     summary = {
-        "mini": {
+        "Advanced": {
             "avg_latency": avg(metrics["mini"]["latency"]),
             "judge": {k: avg_judge(metrics["mini"]["judge"], k)
                       for k in ["faithfulness", "coverage", "conciseness", "clarity"]},
@@ -326,7 +326,7 @@ def run_benchmark(
             "max_len_chars_observed": max(metrics["mini"]["len_chars"]) if metrics["mini"]["len_chars"] else None,
             "lang_match_rate": avg([1.0 if ok else 0.0 for ok in metrics["mini"]["lang_ok"]]),
         },
-        "hybrid": {
+        "Fast": {
             "avg_latency": avg(metrics["hybrid"]["latency"]),
             "judge": {k: avg_judge(metrics["hybrid"]["judge"], k)
                       for k in ["faithfulness", "coverage", "conciseness", "clarity"]},
