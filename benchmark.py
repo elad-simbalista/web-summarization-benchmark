@@ -13,7 +13,7 @@ from openai import OpenAI
 SEED = 42
 random.seed(SEED)
 
-SUMMARY_CHAR_LIMIT = 1500  # <-- chars (per your correction)
+SUMMARY_CHAR_LIMIT = 1500
 SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\n+")
 
 
