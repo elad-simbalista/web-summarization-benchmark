@@ -27,14 +27,14 @@ A direct abstractive summarization approach using `gpt-4.1-mini`, which provides
 API cost is reported as pricing units ($/1M input tokens / $/1M output tokens).  
 Actual cost per summary depends on token usage.
 
-| Approach | Model / Method | Avg Latency (s) | Cost unit ($/1M in / $/1M out) | Faithfulness ↑ | Coverage ↑ | Conciseness ↑ | Clarity ↑ | ROUGE-L ↑ |
-|---|---|---:|---|---:|---:|---:|---:|---:|
-| Fast | Lead-TFIDF (extractive) | 0.02 | $0 / $0 | 3.90 | 2.86 | 2.98 | 3.26 | 0.266 |
-| Fast | TextRank (extractive) | 5.76 | $0 / $0 | 3.76 | 2.63 | 3.08 | 3.06 | 0.268 |
-| **Fast (Hybrid)** | **Lead-TFIDF → GPT-4.1-nano** | **1.10** | **OpenAI gpt-4.1-nano pricing** | **4.94** | 4.33 | **4.36** | **4.97** | 0.086 |
-| Advanced | GPT-4.1-nano (standalone) | 2.34 | OpenAI gpt-4.1-nano pricing | 4.24 | 3.88 | 3.10 | 3.94 | 0.151 |
-| **Advanced** | **GPT-4.1-mini** | 5.04 | **OpenAI gpt-4.1-mini pricing** | **5.00** | **4.84** | 4.16 | **4.96** | 0.174 |
-| Ceiling (slow) | GPT-5-nano | 18.76 | OpenAI gpt-5-nano pricing | 4.71 | 4.53 | 4.24 | 4.61 | 0.196 |
+| Approach          | Model / Method | Avg Latency (s) | Cost (USD per 1M tokens) | Faithfulness ↑ | Coverage ↑ | Conciseness ↑ | Clarity ↑ | ROUGE-L ↑ |
+|-------------------|---|---:|--------------------------|---:|---:|---:|---:|---:|
+| Fast              | Lead-TFIDF (extractive) | 0.02 | $0 / $0                  | 3.90 | 2.86 | 2.98 | 3.26 | 0.266 |
+| Fast              | TextRank (extractive) | 5.76 | $0 / $0                  | 3.76 | 2.63 | 3.08 | 3.06 | 0.268 |
+| **Fast (Hybrid)** | **Lead-TFIDF → GPT-4.1-nano** | **1.10** | **$0.1 / $0.4**          | **4.94** | 4.33 | **4.36** | **4.97** | 0.086 |
+| Fast              | GPT-4.1-nano (standalone) | 2.34 | $0.1 / $0.4              | 4.24 | 3.88 | 3.10 | 3.94 | 0.151 |
+| **Advanced**      | **GPT-4.1-mini** | 5.04 | **$0.4 / $1.6**          | **5.00** | **4.84** | 4.16 | **4.96** | 0.174 |
+| Ceiling (slow)    | GPT-5-nano | 18.76 | $0.05 / $0.4             | 4.71 | 4.53 | 4.24 | 4.61 | 0.196 |
 
 ---
 
