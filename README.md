@@ -27,5 +27,4 @@ source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY="..."
 
-
-![Latency–Quality Pareto Plot](models.png)
+![Plot](models.png)
