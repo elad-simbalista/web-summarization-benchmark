@@ -17,6 +17,8 @@ A two-stage pipeline where the input document is first compressed using a Lead-T
 **Advanced**  
 A direct abstractive summarization approach using `gpt-4.1-mini`, which provides the highest overall quality and is robust to noisy inputs.
 
+![Plot](models.png)
+
 ---
 
 ## Setup
@@ -27,4 +29,4 @@ source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY="..."
 
-![Plot](models.png)
+
