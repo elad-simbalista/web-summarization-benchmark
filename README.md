@@ -44,6 +44,9 @@ Actual cost per summary depends on token usage.
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-export OPENAI_API_KEY="..."
+export OPENAI_API_KEY="enter openai key here"
+
+# run
+python benchmark.py --data <path to summaries_1k.json> --n <Number of samples to evaluate>
 
 
